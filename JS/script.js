@@ -251,6 +251,9 @@ function GatherQuest(xpAward,currentCharacter) {
 
     // choose reward item's index randomly.
     let rewardItemIndex = Math.floor(Math.random()*items.length - 1);
+    if(rewardItemIndex = 38) {
+        rewardItemIndex -=1;
+    }
     // set the chance the reward item will be found.
     let gatherChance = 22;
     if (currentCharacter.Level>=5)
